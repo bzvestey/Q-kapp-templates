@@ -10,8 +10,10 @@ import { HttpLink } from "apollo-link-http";
 import { InMemoryCache } from "apollo-cache-inmemory";
 import { ApolloProvider } from "react-apollo";
 
+const uri = process.env.REACT_APP_GRAPHQL_URI;
+console.log("uri", uri);
 const client = new ApolloClient({
-  link: new HttpLink({ uri: "http://localhost:3000" }),
+  link: new HttpLink({ uri }),
   cache: new InMemoryCache().restore(window.__APOLLO_STATE__)
 });
 
