@@ -22,7 +22,25 @@
   font-size: large;
 }
 
+.Data-load {
+  color: grey;
+}
+
+.Data-error {
+  color: red;
+}
+
+.Service-list {
+  padding: 0;
+  list-style-type: none;
+  color: green;
+}
+
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

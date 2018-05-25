@@ -1,14 +1,19 @@
 {
-  "name": "react_q",
+  "name": "Q-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "apollo-cache-inmemory": "^1.2.1",
+    "apollo-client": "^2.3.1",
     "apollo-client-preset": "^1.0.8",
+    "apollo-link-context": "^1.0.3",
+    "apollo-link-http": "^1.5.4",
+    "apollo-utilities": "^1.0.12",
     "graphql": "^0.13.2",
-    "graphql-tag": "^2.8.0",
-    "react": "^16.3.1",
-    "react-apollo": "^2.1.2",
-    "react-dom": "^16.3.1",
+    "graphql-tag": "^2.9.2",
+    "react": "^16.4.0",
+    "react-apollo": "^2.1.4",
+    "react-dom": "^16.4.0",
     "react-scripts": "1.1.4"
   },
   "scripts": {

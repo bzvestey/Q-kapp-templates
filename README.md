@@ -1,0 +1,1 @@
+This repository contains Maana Knowledge Application project templates for a variety of popular web/application frameworks. The intent is to provide a quick and easy path to becoming productive delivering a custom experience by providing all of the infrastructure "plumbing," such as a properly configured GraphQL client and user authentication.
