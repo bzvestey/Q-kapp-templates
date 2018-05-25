@@ -11,16 +11,15 @@ import { InMemoryCache } from "apollo-cache-inmemory";
 import { ApolloProvider } from "react-apollo";
 import { setContext } from "apollo-link-context";
 
+//
+// Client setup
+// - allow this service to be a client of a remote service
+//
 const uri = process.env.REACT_APP_MAANA_ENDPOINT;
 console.log("uri", uri);
 
 const token = process.env.REACT_APP_MAANA_AUTH_TOKEN;
 console.log("token", token);
-
-//
-// Client setup
-// - allow this service to be a client of a remote service
-//
 
 const authLink = setContext((_, { headers }) => {
   // return the headers to the context so httpLink can read them
