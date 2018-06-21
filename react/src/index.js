@@ -19,9 +19,12 @@ import { setContext } from "apollo-link-context";
 const uri = process.env.REACT_APP_MAANA_ENDPOINT;
 console.log("uri", uri);
 
+// create the auth object
+const auth = new Auth();
+
 const authLink = setContext((_, { headers }) => {
   // get the authentication token from local storage if it exists
-  const token = localStorage.getItem("access_token");
+  const token = auth.getAccessToken();
   // return the headers to the context so httpLink can read them
   return {
     headers: {
@@ -41,8 +44,6 @@ const client = new ApolloClient({
   link,
   cache: new InMemoryCache().restore(window.__APOLLO_STATE__)
 });
-
-const auth = new Auth();
 
 ReactDOM.render(
   <ApolloProvider client={client}>

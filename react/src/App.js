@@ -6,7 +6,6 @@ import "./App.css";
 
 class App extends Component {
   render() {
-    console.log("props", this.props);
     const { auth } = this.props;
 
     // if we are not logged in, then show the login dialog
